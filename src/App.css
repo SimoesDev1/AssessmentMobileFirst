@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0; /* Cor de fundo do modo claro */
+  color: #333; /* Cor do texto no modo claro */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para alterações de tema */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333; /* Cor de fundo da navbar */
+  color: #fff; /* Cor do texto da navbar */
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  transition: color 0.3s; /* Transição suave para hover */
+}
+
+.nav-list a:hover {
+  color: #63a2ff; /* Cor do texto ao passar o mouse */
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: black; /* Cor de fundo do herói */
+  color: white; /* Cor do texto do herói */
+}
+
+.media-gallery,
+.video-gallery {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px; /* Espaçamento entre os itens da grade */
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento entre os vídeos */
+}
+
+video {
+  width: 100%; /* Ajuste o vídeo para preencher o espaço */
+  height: auto; /* Mantém a proporção do vídeo */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+}
+
+.dark-mode {
+  background-color: #121212; /* Cor de fundo do modo escuro */
+  color: #ffffff; /* Cor do texto no modo escuro */
+}
+
+.dark-mode .navbar {
+  background: #222; /* Cor da navbar no modo escuro */
+}
+
+.dark-mode .hero {
+  background: #1a1a1a; /* Cor de fundo do herói no modo escuro */
+}
+
+.dark-mode footer {
+  background: #222; /* Cor do rodapé no modo escuro */
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* Oculta a lista de navegação em telas pequenas */
+    flex-direction: column; /* Alinha os itens verticalmente */
+  }
+
+  .nav-list.active {
+    display: flex; /* Exibe a lista quando ativa */
+  }
+
+  .menu-toggle {
+    display: block; /* Exibe o botão de menu em telas pequenas */
+  }
+
+  .hero {
+    padding: 30px 10px; /* Ajusta o padding do herói em telas pequenas */
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  padding: 10px 15px;
+}
+
+.primary {
+  background-color: #007bff; /* Cor de fundo para botões primários */
+  color: white; /* Cor do texto para botões primários */
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+.medium {
+  height: 40px;
+  width: 100%;
+}

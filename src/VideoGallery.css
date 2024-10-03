@@ -1,0 +1,60 @@
+.dark-mode .video-gallery h2 {
+  color: #fff; /* Cor branca para o título no modo escuro */
+}
+
+.video-gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.video-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.video-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item video {
+  width: 240px;
+  height: auto;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 1.5rem;
+  background-size: 100% 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #0056b3;
+  opacity: 1;
+}

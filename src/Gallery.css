@@ -1,0 +1,40 @@
+.media-gallery {
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo claro */
+}
+
+.media-gallery h2 {
+  color: #333; /* Cor padrão do título */
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+/* Modo escuro */
+.dark-mode .media-gallery {
+  background-color: #222; /* Fundo escuro */
+}
+
+.dark-mode .media-gallery h2 {
+  color: #fff; /* Título branco no modo escuro */
+}
